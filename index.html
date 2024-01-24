@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Global Weather App</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            color: #28a745 !important; /* Green font color */
+        }
+
+        .btn-primary {
+            background-color: #28a745; /* Green button color */
+            border-color: #28a745; /* Green border color */
+        }
+
+        .btn-primary:hover {
+            background-color: #218838 !important; /* Darker green on hover */
+            border-color: #1e7e34 !important; /* Darker green border on hover */
+        }
+
+        .btn-primary:focus {
+            box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.5); /* Lighter green focus shadow */
+        }
+
+        .card-title {
+            color: #28a745 !important; /* Green title color */
+        }
+    </style>
+</head>
+
+<body class="bg-light">
+
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="card-title text-center text-primary">Global Weather</h2>
+                        <form id="weatherForm">
+                            <div class="form-group">
+                                <label for="cityInput">Enter City:</label>
+                                <input type="text" class="form-control" id="cityInput" placeholder="E.g., London"
+                                    required>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Get Weather</button>
+                        </form>
+                        <div id="weatherResult" class="mt-4"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
+
+
+
+
