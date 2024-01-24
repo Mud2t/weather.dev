@@ -1,15 +1,12 @@
-// Replace 'YOUR_API_KEY' with your actual OpenWeatherMap API key
 const apiKey = '24e6f37923d7c45895217fcc313b7983';
 const apiUrl = 'https://api.openweathermap.org/data/2.5/weather';
 
-// Handle form submission
 document.getElementById('weatherForm').addEventListener('submit', function (event) {
   event.preventDefault();
   const cityInput = document.getElementById('cityInput').value;
   getWeather(cityInput);
 });
 
-// Fetch current weather data from OpenWeatherMap API
 function getWeather(city) {
   const url = `${apiUrl}?q=${city}&appid=${apiKey}&units=metric`;
 
@@ -23,7 +20,6 @@ function getWeather(city) {
     });
 }
 
-// Update UI with current weather information
 function displayWeather(data) {
   const resultContainer = document.getElementById('weatherResult');
 
